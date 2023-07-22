@@ -1,0 +1,10 @@
+#nav-content {
+    padding-right: 2rem;
+}
+
+#nav-home,
+#nav-about,
+#nav-service {
+    padding-right: 40px;
+    font-size: larger;
+}
