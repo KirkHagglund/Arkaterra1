@@ -73,7 +73,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-contact" href="#contact">Contact Us</a>
+              <a class="nav-link" id="nav-contact" href="#contact"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -103,8 +105,9 @@
           we serve.
         </p>
       </div>
+
       <div class="container my-3">
-        <h3 class="row justify-content-center" id="values">Values</h3>
+        <h3 class="row justify-content-center" id="values">Guiding Values</h3>
         <div>
           <h5>Environmental Stewardship</h5>
           <p>
@@ -175,74 +178,130 @@
           </ul>
         </div>
       </div>
-      <div class="container my-3">
-        <h3 class="row justify-content-center" id="contact">Contact Form Section</h3>
+      <div id="contact-container" class="container my-3">
+        <h3
+          class="row justify-content-center pt-5"
+          style="color: white"
+          id="contact"
+        >
+          Contact Arkaterra LTD
+        </h3>
         <!-- Wrapper container -->
-<div class="container py-4">
+        <div class="container py-4">
+          <!-- Bootstrap 5 starter form -->
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <!-- Name input -->
+            <div class="mb-3">
+              <label class="form-label" style="color: white" for="name"
+                >Name</label
+              >
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Name"
+                data-sb-validations="required"
+              />
+              <div class="invalid-feedback" data-sb-feedback="name:required">
+                Name is required.
+              </div>
+            </div>
 
-  <!-- Bootstrap 5 starter form -->
-  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <!-- Email address input -->
+            <div class="mb-3">
+              <label class="form-label" style="color: white" for="emailAddress"
+                >Email Address</label
+              >
+              <input
+                class="form-control"
+                id="emailAddress"
+                type="email"
+                placeholder="Email Address"
+                data-sb-validations="required, email"
+              />
+              <div
+                class="invalid-feedback"
+                data-sb-feedback="emailAddress:required"
+              >
+                Email Address is required.
+              </div>
+              <div
+                class="invalid-feedback"
+                data-sb-feedback="emailAddress:email"
+              >
+                Email Address Email is not valid.
+              </div>
+            </div>
 
-    <!-- Name input -->
-    <div class="mb-3">
-      <label class="form-label" for="name">Name</label>
-      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-    </div>
+            <!-- Message input -->
+            <div class="mb-3">
+              <label class="form-label" style="color: white" for="message"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                type="text"
+                placeholder="Message"
+                style="height: 10rem"
+                data-sb-validations="required"
+              ></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">
+                Message is required.
+              </div>
+            </div>
 
-    <!-- Email address input -->
-    <div class="mb-3">
-      <label class="form-label" for="emailAddress">Email Address</label>
-      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
-      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-    </div>
+            <!-- Form submissions success message -->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">Form submission successful!</div>
+            </div>
 
-    <!-- Message input -->
-    <div class="mb-3">
-      <label class="form-label" for="message">Message</label>
-      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-    </div>
+            <!-- Form submissions error message -->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">
+                Error sending message!
+              </div>
+            </div>
 
-    <!-- Form submissions success message -->
-    <div class="d-none" id="submitSuccessMessage">
-      <div class="text-center mb-3">Form submission successful!</div>
-    </div>
-
-    <!-- Form submissions error message -->
-    <div class="d-none" id="submitErrorMessage">
-      <div class="text-center text-danger mb-3">Error sending message!</div>
-    </div>
-
-    <!-- Form submit button -->
-    <div class="d-grid">
-      <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-    </div>
-
-  </form>
-
-</div>
+            <!-- Form submit button -->
+            <div class="d-grid">
+              <button
+                class="btn btn-lg"
+                style="
+                  background-color: var(--background);
+                  color: white;
+                  width: 50%;
+                "
+                id="submitButton"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
-    <footer class="container my-5">
-      <p class="row justify-content-center">
-        At Arkaterra LTD, we are committed to helping you achieve environmental
-        excellence. Contact us today to learn more about our services and
-        discover how our technical ecpertise, friendly approach, and commitment
-        to safety set us apart as your trusted environmental services partner.
-        We understand the importance of maintaining a safe working environment
-        for your team and the surrounding community. Safety is ingrained in
-        every aspect of our operations, from on-site monitoring to emergency
-        preparedness.
-      </p>
-      <p class="row justify-content-center">
-        By partnering with Arkaterra LTD, you can rest assured that safety is at
-        the forefront of our minds and actions. We are committed to fostering a
-        culture of safety, providing training, and promising best practices in
-        every project we undertake. Our goal is to create a secure and
-        sustainable environment for all stakeholders involved.
-      </p>
+    <footer class="container-fluid">
+      <div class="container">
+        <p class="row justify-content-center">
+          At Arkaterra LTD, we are committed to helping you achieve
+          environmental excellence. Contact us today to learn more about our
+          services and discover how our technical ecpertise, friendly approach,
+          and commitment to safety set us apart as your trusted environmental
+          services partner. We understand the importance of maintaining a safe
+          working environment for your team and the surrounding community.
+          Safety is ingrained in every aspect of our operations, from on-site
+          monitoring to emergency preparedness.
+        </p>
+        <p class="row justify-content-center">
+          By partnering with Arkaterra LTD, you can rest assured that safety is
+          at the forefront of our minds and actions. We are committed to
+          fostering a culture of safety, providing training, and promising best
+          practices in every project we undertake. Our goal is to create a
+          secure and sustainable environment for all stakeholders involved.
+        </p>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
