@@ -42,7 +42,8 @@ p#mission-text {
 
 #nav-home,
 #nav-about,
-#nav-service {
+#nav-service,
+#nav-contact {
     padding-right: 40px;
     font-size: larger;
 }
