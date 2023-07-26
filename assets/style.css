@@ -45,6 +45,13 @@ p#mission-text {
     z-index: -1;
 }
 
+#navigation {
+    box-shadow: 0px 3px 3px grey;
+    position: auto;
+    width: 100%;
+    z-index: 21;
+}
+
 #nav-content {
     padding-right: 2rem;
 }
@@ -57,8 +64,16 @@ p#mission-text {
     font-size: larger;
 }
 
+#comp-img,
+#mon-img,
+#con-img {
+    width: 100%;
+}
+
 #contact-container {
-    background-color: var(--darkbrown);
+    border: 3px solid var(--background);
+    border-radius: 10px;
+    width: 50%;
 }
 
 #submitButton {
@@ -73,7 +88,6 @@ p#mission-text {
 }
 
 footer {
-    background-color: var(--darkbrown);
     margin-bottom: 0;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
