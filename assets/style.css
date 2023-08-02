@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 120px;
 }
 
 * {
@@ -30,6 +30,10 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+#service-main {
+  padding-top: 70px;
 }
 
 h2 {
