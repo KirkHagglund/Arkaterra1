@@ -7,6 +7,11 @@
   --lightbrown: #6c3f15;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +19,7 @@
 
 body {
   position: relative;
+  padding-top: 70px;
 }
 
 .slider {
@@ -47,9 +53,10 @@ p#mission-text {
 
 #navigation {
   box-shadow: 0px 3px 3px grey;
-  position: auto;
+  position: fixed;
   width: 100%;
   z-index: 21;
+  top: 0;
 }
 
 #nav-content {
