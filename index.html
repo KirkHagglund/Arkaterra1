@@ -15,6 +15,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="assets/style.css" />
     <title>Arkaterra Ltd.</title>
     <link rel="icon" href="assets/images/Favicon.png" type="image/x-icon" />
@@ -47,16 +48,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav me-0 mb-2 mb-lg-0 container-fluid justify-content-end"
-            id="nav-content"
+            class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-end"
           >
             <li class="nav-item">
-              <a class="nav-link" id="nav-home" aria-current="page" href="#"
+              <a class="nav-link d-lg-none" id="nav-home-burger" href="#">
+              <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Home</span></a>
+              <a class="nav-link d-none d-lg-block" id="nav-home" aria-current="page" href="#"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-about" href="#mission">About Us</a>
+              <a class="nav-link d-lg-none" id="nav-about-burger" href="#mission">
+                <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">About Us</span></a>
+              <a class="nav-link d-none d-lg-block" id="nav-about" href="#mission">About Us</a>
             </li>
             <li class="nav-item dropdown" data-dropdown="">
               <a
@@ -91,7 +95,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-contact" href="#contact"
+              <a class="nav-link d-lg-none" id="nav-contact-burger" href="#contact">
+                <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Contact Us</span></a>
+              <a class="nav-link d-none d-lg-block" id="nav-contact" href="#contact"
                 >Contact Us</a
               >
             </li>
@@ -433,5 +439,6 @@
         </p>
       </div>
     </footer>
+
   </body>
 </html>

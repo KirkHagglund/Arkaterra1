@@ -68,9 +68,12 @@ p#mission-text {
 }
 
 #nav-home,
+#nav-home-burger,
 #nav-about,
+#nav-about-burger,
 #nav-service,
-#nav-contact {
+#nav-contact,
+#nav-contact-burger {
   padding-right: 40px;
   font-size: larger;
 }
