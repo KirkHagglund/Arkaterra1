@@ -136,4 +136,8 @@ footer p {
     position: absolute;
     top: 65px;
   }
+
+  h2 {
+    text-align: center;
+  }
 }
