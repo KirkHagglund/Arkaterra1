@@ -10,7 +10,6 @@
   </head>
   <body>
     <nav id="navigation" class="navbar navbar-expand-md navbar-light bg-light">
-      <!--alternate option is style attribute with background-color: #ff914d-->
       <div class="container-fluid">
         <nav class="navbar navbar-light">
           <div class="container">
@@ -40,8 +39,15 @@
             id="nav-content"
           >
             <li class="nav-item">
+              <a class="nav-link d-lg-none" id="nav-home-burger" href="index.html">
+                <span
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  >Home</span
+                ></a
+              >
               <a
-                class="nav-link"
+                class="nav-link d-none d-lg-block"
                 id="nav-home"
                 aria-current="page"
                 href="index.html"
@@ -78,7 +84,18 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-contact" href="#contact"
+              <a
+                class="nav-link d-lg-none"
+                id="nav-contact-burger"
+                href="#contact"
+              >
+                <span
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  >Contact Us</span
+                ></a
+              >
+              <a class="nav-link d-none d-lg-block" id="nav-contact" href="#contact"
                 >Contact Us</a
               >
             </li>
@@ -87,8 +104,8 @@
       </div>
     </nav>
 
-    <main id="service-main">
-      <div class="container my-3">
+    <main id="service-main" style="background-color: var(--logobrown)">
+      <div class="container my-3 bg-light">
         <h3 class="row justify-content-center">Integrated Solutions</h3>
         <div>
           <h5>Environmental Planning</h5>
