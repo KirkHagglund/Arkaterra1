@@ -124,7 +124,18 @@ footer p {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1199px) {
+  #caption-1,
+  #caption-2,
+  #caption-3,
+  #caption-4 {
+    position: absolute;
+    top: 100px;
+  }
+  
+}
+
+@media only screen and (max-width: 991px) {
   #contact-container {
     width: 100%;
   }
