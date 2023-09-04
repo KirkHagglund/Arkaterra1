@@ -87,11 +87,18 @@ p#mission-text {
 }
 
 #comp-img,
-#mon-img,
-#con-img {
+#sol-img,
+#train-img {
   width: 100%;
-  height: inherit;
   max-height: 400px;
+  margin: auto;
+}
+
+#comp-caption,
+#sol-caption,
+#train-caption {
+  width: 80%;
+  margin: auto;
 }
 
 #contact-container {
@@ -137,7 +144,6 @@ footer p {
     position: absolute;
     top: 100px;
   }
-  
 }
 
 @media only screen and (max-width: 991px) {
