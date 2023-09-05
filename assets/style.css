@@ -86,19 +86,46 @@ p#mission-text {
   font-size: larger;
 }
 
-#comp-img,
-#sol-img,
-#train-img {
+.image {
   width: 100%;
-  max-height: 400px;
-  margin: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-#comp-caption,
-#sol-caption,
-#train-caption {
-  width: 80%;
-  margin: auto;
+.image .overlay {
+  position: absolute;
+  bottom: 0;
+  padding-left: 25px;
+  padding-top: 15px;
+  width: 100%;
+  color: white;
+  z-index: 5;
+}
+
+.image .overlay::before{
+  content: "";
+  background: #ffff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  left:0;
+  bottom: -150px;
+  z-index: -2;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.image:hover .overlay{
+  color: black;
+}
+
+.container .image:hover .overlay .h5 {
+    color: black;
+}
+
+.image:hover .overlay::before{
+    bottom: 0px;
 }
 
 #contact-container {
